@@ -1,0 +1,153 @@
+{
+  "genres": {
+    "Indonesia": 7,
+    "Game": 4,
+    "Beginner": 3,
+    "Regular": 2,
+    "Cafe/Bar": 2,
+    "Meetup": 1,
+    "Music": 1
+  },
+  "events": [
+    {
+      "id": "b3c217d6-cd84-4541-b7ca-af5377269c39",
+      "quest": true,
+      "title": "Mancing",
+      "start": "2025-12-03T20:00:00.000+07:00",
+      "end": "2025-12-03T22:00:00.000+07:00",
+      "author": "-Nakumi",
+      "header_file": "",
+      "body": "mancing ges",
+      "genres": [
+        "Indonesia",
+        "Game"
+      ],
+      "condition": "Hidup aja sih",
+      "way": "Friend +",
+      "note": "gak ada"
+    },
+    {
+      "id": "33f5da3b-39e1-4cff-ae06-c693ed20b075",
+      "quest": false,
+      "title": "Nongki",
+      "start": "2025-12-05T20:00:00.000+07:00",
+      "end": "2025-12-05T22:00:00.000+07:00",
+      "author": "-Nakumi",
+      "header_file": "",
+      "body": "nom nom nom nom",
+      "genres": [
+        "Indonesia",
+        "Game"
+      ],
+      "condition": "Hidup aja sih",
+      "way": "Rahasia",
+      "note": ""
+    },
+    {
+      "id": "dd8de2de-36a1-47c9-9585-5eec41edacc5",
+      "quest": true,
+      "title": "Main",
+      "start": "2026-01-01T20:00:00.000+07:00",
+      "end": "2026-01-01T22:00:00.000+07:00",
+      "author": "-Nakumi",
+      "header_file": "",
+      "body": "aw aw",
+      "genres": [
+        "Indonesia",
+        "Game"
+      ],
+      "condition": "selama punya nyawa",
+      "way": "join aja",
+      "note": ""
+    },
+    {
+      "id": "fb2ed4ba-80ab-48f4-bace-f10f87014227",
+      "quest": true,
+      "title": "turu",
+      "start": "2025-12-04T20:00:00.000+07:00",
+      "end": "2025-12-04T22:00:00.000+07:00",
+      "author": "-Nakumi",
+      "header_file": "",
+      "body": "xixixix",
+      "genres": [
+        "Indonesia",
+        "Beginner",
+        "Regular"
+      ],
+      "condition": "sehat",
+      "way": "Public",
+      "note": "gak ada note"
+    },
+    {
+      "id": "c1069dfb-c68a-4fd6-bd44-8a2c5581b38b",
+      "quest": true,
+      "title": "Kerja",
+      "start": "2025-12-31T20:00:00.000+07:00",
+      "end": "2025-12-31T22:00:00.000+07:00",
+      "author": "HRD",
+      "header_file": "",
+      "body": "awikwok",
+      "genres": [
+        "Indonesia"
+      ],
+      "condition": "pakek nanya",
+      "way": "Kirim CV Online",
+      "note": "wajib lulus S12"
+    },
+    {
+      "id": "131f18a3-1438-4457-95bc-251c3999fc0b",
+      "quest": true,
+      "title": "wleowleowleo😋",
+      "start": "2025-12-04T20:00:00.000+07:00",
+      "end": "2025-12-04T22:00:00.000+07:00",
+      "author": "wle",
+      "header_file": "",
+      "body": "wle",
+      "genres": [
+        "Beginner",
+        "Cafe/Bar",
+        "Game"
+      ],
+      "condition": "",
+      "way": "wle",
+      "note": ""
+    },
+    {
+      "id": "b2fd04cb-0e17-483c-b75e-e6858041cf37",
+      "quest": true,
+      "title": "Tahun Baru COY!",
+      "start": "2025-12-31T22:00:00.000+07:00",
+      "end": "2026-01-01T05:00:00.000+07:00",
+      "author": "Anonim",
+      "header_file": "",
+      "body": "PARTY GES",
+      "genres": [
+        "Indonesia",
+        "Beginner",
+        "Regular",
+        "Cafe/Bar",
+        "Meetup",
+        "Music"
+      ],
+      "condition": "",
+      "way": "xixixi :p",
+      "note": ""
+    },
+    {
+      "id": "7d6fe3fc-ee29-404f-8c50-cf1ff699edf8",
+      "quest": true,
+      "title": "miaw miaw",
+      "start": "2025-12-26T20:00:00.000+07:00",
+      "end": "2025-12-30T22:00:00.000+07:00",
+      "author": "miaw",
+      "header_file": "",
+      "body": "a",
+      "genres": [
+        "Indonesia"
+      ],
+      "condition": "",
+      "way": "a",
+      "note": ""
+    }
+  ]
+}
