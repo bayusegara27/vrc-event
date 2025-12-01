@@ -63,7 +63,7 @@
     {
       "id": "fb2ed4ba-80ab-48f4-bace-f10f87014227",
       "quest": true,
-      "title": "turu",
+      "title": "a mimir dulus",
       "start": "2025-12-04T20:00:00.000+07:00",
       "end": "2025-12-04T22:00:00.000+07:00",
       "author": "-Nakumi",
@@ -74,9 +74,9 @@
         "Beginner",
         "Regular"
       ],
-      "condition": "sehat",
+      "condition": "",
       "way": "Public",
-      "note": "gak ada note"
+      "note": ""
     },
     {
       "id": "c1069dfb-c68a-4fd6-bd44-8a2c5581b38b",
