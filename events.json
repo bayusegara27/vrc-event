@@ -1,6 +1,6 @@
 {
   "genres": {
-    "Indonesia": 7,
+    "Indonesia": 8,
     "Game": 4,
     "Beginner": 3,
     "Regular": 2,
@@ -147,6 +147,22 @@
       ],
       "condition": "",
       "way": "a",
+      "note": ""
+    },
+    {
+      "id": "84ba93c2-264b-4bde-9a7e-8082dc0cbd88",
+      "quest": true,
+      "title": "Kuliah sini ges",
+      "start": "2025-12-29T21:00:00.000+07:00",
+      "end": "2025-12-29T16:00:00.000+07:00",
+      "author": "-Nakumi",
+      "header_file": "",
+      "body": "amicum",
+      "genres": [
+        "Indonesia"
+      ],
+      "condition": "",
+      "way": "tanyakan atmin amikom",
       "note": ""
     }
   ]
