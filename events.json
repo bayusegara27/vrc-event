@@ -1,10 +1,10 @@
 {
   "genres": {
-    "Indonesia": 8,
+    "Indonesia": 9,
     "Game": 4,
     "Beginner": 3,
-    "Regular": 2,
-    "Cafe/Bar": 2,
+    "Regular": 3,
+    "Cafe/Bar": 3,
     "Meetup": 1,
     "Music": 1
   },
@@ -163,6 +163,24 @@
       ],
       "condition": "",
       "way": "tanyakan atmin amikom",
+      "note": ""
+    },
+    {
+      "id": "760a7868-e47b-4c1b-abfb-ad89ca3c5241",
+      "quest": true,
+      "title": "makan bang",
+      "start": "2025-12-06T19:00:00.000+07:00",
+      "end": "2025-12-10T20:00:00.000+07:00",
+      "author": "-Nakumi",
+      "header_file": "",
+      "body": "mukbang kita",
+      "genres": [
+        "Indonesia",
+        "Regular",
+        "Cafe/Bar"
+      ],
+      "condition": "",
+      "way": "join aja",
       "note": ""
     }
   ]
