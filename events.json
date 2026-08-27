@@ -2,7 +2,6 @@
  "genres": {
   "Music": 2,
   "Karaoke": 1,
-  "Chill": 1,
   "Indonesia": 1
  },
  "events": [
@@ -24,22 +23,6 @@
    "quest": false,
    "poster_slot": 1,
    "highlight": true
-  },
-  {
-   "id": "evt_1M12G5FWF95HQ",
-   "title": "Coba dari Penguji",
-   "author": "",
-   "body": "",
-   "way": "",
-   "condition": "",
-   "note": "",
-   "start": "2026-12-10T20:00:00+07:00",
-   "end": "2026-12-10T22:00:00+07:00",
-   "genres": [
-    "Chill"
-   ],
-   "pc": true,
-   "quest": false
   },
   {
    "id": "evt_1M12E4172KCSE",
