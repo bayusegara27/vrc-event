@@ -175,6 +175,13 @@ footer .stempel{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);
 const IKON = k => `ikon/${k}.png`;
 const POSTER = n => `poster/${n}.jpg`;
 
+/** Nama jenis instance seperti yang tertulis di klien VRChat. */
+const NAMA_INSTANCE = {
+  PUBLIC:"Public", GROUP_PUBLIC:"Group Public", GROUP_PLUS:"Group+", GROUP:"Group",
+  FRIENDS_PLUS:"Friends+", FRIENDS:"Friends", INVITE_PLUS:"Invite+", INVITE:"Invite",
+};
+const TERBUKA = new Set(["PUBLIC", "GROUP_PUBLIC"]);
+
 const esc = s => String(s ?? "").replace(/[&<>"]/g,
   c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
@@ -205,17 +212,22 @@ function platIkon(e) {
     .map(k => `<img src="${IKON(k)}" alt="${k}" title="${k}">`).join("");
 }
 
-/** Acara yang layak jadi kepala halaman: yang sedang berlangsung dulu, lalu
- *  sorotan terdekat, lalu apa pun yang paling dekat. */
-function pilihSorotan(ev, now) {
+/**
+ * Acara yang jadi kepala halaman: yang sedang berlangsung dulu, lalu yang
+ * punya banner, lalu apa pun yang paling dekat.
+ *
+ * Tidak ada lagi penanda sorotan yang diberikan tangan — acara yang sedang
+ * dekat memang yang paling berguna ditampilkan.
+ */
+function pilihUtama(ev, now) {
   const depan = ev.filter(e => new Date(e.end) > now)
                   .sort((a, b) => new Date(a.start) - new Date(b.start));
   return depan.find(e => new Date(e.start) <= now)
-      || depan.find(e => e.highlight)
+      || depan.find(e => e.banner_slot != null)
       || depan[0] || null;
 }
 
-function gambarSorotan(e, now) {
+function gambarUtama(e, now) {
   const wadah = document.getElementById("sorot");
   if (!e) { wadah.innerHTML = ""; return; }
 
@@ -230,7 +242,6 @@ function gambarSorotan(e, now) {
   const kapan = hidup
     ? "Sedang berlangsung"
     : [
-        e.highlight ? "Sorotan" : null,
         hariLagi > 7
           ? mulai.toLocaleDateString("id-ID", { day: "numeric", month: "long" })
           : Jadwal.namaHari(mulai, now),
@@ -238,9 +249,12 @@ function gambarSorotan(e, now) {
       ].filter(Boolean).join(" &middot; ");
 
   const gbr = (e.poster_slot != null && e.poster_slot >= 0) ? POSTER(e.poster_slot) : null;
+  const spanduk = (e.banner_slot != null && e.banner_slot >= 0)
+    ? `banner/${e.banner_slot}.jpg` : null;
 
   wadah.innerHTML = `<article class="kartu">
-    ${gbr ? `<div class="aura" style="background-image:url('${gbr}')"></div>` : ""}
+    ${(spanduk || gbr) ? `<div class="aura"
+       style="background-image:url('${spanduk || gbr}')"></div>` : ""}
     <div class="gbr">${gbr ? `<img src="${gbr}" alt="Poster ${esc(e.title)}">` : ""}</div>
     <div class="isi">
       <div class="cap${hidup ? " live" : ""}">${kapan}</div>
@@ -251,6 +265,8 @@ function gambarSorotan(e, now) {
         ${e.genres && e.genres.length
           ? `<dt>Jenis</dt><dd>${esc(e.genres.join(", "))}</dd>` : ""}
         <dt>Platform</dt><dd class="plat">${platIkon(e) || "&mdash;"}</dd>
+        ${e.instance ? `<dt>Instance</dt><dd>${esc(NAMA_INSTANCE[e.instance] || e.instance)}${
+          TERBUKA.has(e.instance) ? "" : " — perlu undangan atau keanggotaan"}</dd>` : ""}
       </dl>
       <div class="tautan">${tautanAcara(e).map(t =>
         `<a class="${t.cls}" href="${esc(t.url)}" target="_blank" rel="noopener">${t.teks}</a>`
@@ -301,7 +317,7 @@ Promise.all([
   const ev = data.events || [];
 
   gambarKeadaan(ev, now);
-  gambarSorotan(pilihSorotan(ev, now), now);
+  gambarUtama(pilihUtama(ev, now), now);
 
   Jadwal.gambar(document.getElementById("jadwal"), {
     events: ev,

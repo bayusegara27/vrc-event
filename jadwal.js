@@ -224,7 +224,6 @@
     // judul stripnya sudah mengatakannya.
     const tanda = [];
     if (berlangsung && !ringkas) tanda.push(`<span class="jw-tag jw-t-live">berlangsung</span>`);
-    if (e.highlight && !ringkas) tanda.push(`<span class="jw-tag jw-t-sorot">sorotan</span>`);
     if (opsi.tandaTambahan && !ringkas) tanda.push(...opsi.tandaTambahan(e));
 
     const oleh = [e.author, (e.genres || []).join(", ")].filter(Boolean).join(" · ");

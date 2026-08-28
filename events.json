@@ -34,10 +34,12 @@
    "ios": false,
    "pc": true,
    "quest": true,
+   "instance": "PUBLIC",
    "world_id": "wrld_12000000-0000-4000-8000-000000000012",
    "group_id": "grp_22000000-0000-4000-8000-000000000022",
    "discord": "https://discord.gg/karaoke",
-   "poster_slot": 6
+   "poster_slot": 0,
+   "banner_slot": 0
   },
   {
    "id": "EVT_BENIH_001",
@@ -58,7 +60,8 @@
    "ios": true,
    "pc": true,
    "quest": true,
-   "poster_slot": 7
+   "instance": "GROUP",
+   "poster_slot": 1
   },
   {
    "id": "EVT_BENIH_002",
@@ -79,7 +82,8 @@
    "ios": false,
    "pc": true,
    "quest": false,
-   "poster_slot": 8
+   "instance": "PUBLIC",
+   "poster_slot": 2
   },
   {
    "id": "EVT_BENIH_003",
@@ -99,7 +103,8 @@
    "android": true,
    "ios": true,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_004",
@@ -120,7 +125,8 @@
    "ios": false,
    "pc": true,
    "quest": false,
-   "poster_slot": 9
+   "instance": "FRIENDS",
+   "poster_slot": 3
   },
   {
    "id": "EVT_BENIH_005",
@@ -141,7 +147,8 @@
    "ios": false,
    "pc": true,
    "quest": true,
-   "poster_slot": 10
+   "instance": "PUBLIC",
+   "poster_slot": 4
   },
   {
    "id": "EVT_BENIH_006",
@@ -162,7 +169,9 @@
    "ios": false,
    "pc": true,
    "quest": false,
-   "poster_slot": 11
+   "instance": "GROUP",
+   "poster_slot": 5,
+   "banner_slot": 1
   },
   {
    "id": "EVT_BENIH_007",
@@ -182,7 +191,8 @@
    "ios": false,
    "pc": true,
    "quest": true,
-   "poster_slot": 12
+   "instance": "PUBLIC",
+   "poster_slot": 6
   },
   {
    "id": "EVT_BENIH_008",
@@ -203,7 +213,8 @@
    "ios": true,
    "pc": true,
    "quest": true,
-   "poster_slot": 13
+   "instance": "PUBLIC",
+   "poster_slot": 7
   },
   {
    "id": "EVT_BENIH_010",
@@ -223,7 +234,8 @@
    "android": true,
    "ios": false,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_011",
@@ -244,7 +256,8 @@
    "ios": true,
    "pc": true,
    "quest": true,
-   "poster_slot": 14
+   "instance": "PUBLIC",
+   "poster_slot": 8
   },
   {
    "id": "EVT_BENIH_012",
@@ -265,11 +278,12 @@
    "ios": false,
    "pc": true,
    "quest": true,
+   "instance": "PUBLIC",
    "world_id": "wrld_f995a2eb-7ddc-4558-aef1-815c3b23df6c",
    "group_id": "grp_a4f791af-a167-4c91-b849-2e37e37f509a",
    "discord": "https://discord.gg/contoh-openmic",
-   "poster_slot": 0,
-   "highlight": true
+   "poster_slot": 9,
+   "banner_slot": 2
   },
   {
    "id": "EVT_BENIH_013",
@@ -290,7 +304,8 @@
    "ios": false,
    "pc": true,
    "quest": true,
-   "poster_slot": 15
+   "instance": "PUBLIC",
+   "poster_slot": 10
   },
   {
    "id": "EVT_BENIH_014",
@@ -309,7 +324,9 @@
    "android": true,
    "ios": true,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "PUBLIC",
+   "poster_slot": 11
   },
   {
    "id": "EVT_BENIH_015",
@@ -328,7 +345,10 @@
    "android": true,
    "ios": true,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "FRIENDS_PLUS",
+   "poster_slot": 12,
+   "banner_slot": 3
   },
   {
    "id": "EVT_BENIH_018",
@@ -348,7 +368,10 @@
    "android": false,
    "ios": false,
    "pc": true,
-   "quest": false
+   "quest": false,
+   "instance": "PUBLIC",
+   "poster_slot": 13,
+   "banner_slot": 4
   },
   {
    "id": "EVT_BENIH_016",
@@ -370,11 +393,11 @@
    "ios": false,
    "pc": true,
    "quest": true,
+   "instance": "PUBLIC",
    "world_id": "wrld_f995a2eb-7ddc-4558-aef1-815c3b23df6c",
    "group_id": "grp_a4f791af-a167-4c91-b849-2e37e37f509a",
    "discord": "https://discord.gg/karaoke",
-   "poster_slot": 1,
-   "highlight": true
+   "poster_slot": 14
   },
   {
    "id": "EVT_BENIH_017",
@@ -394,7 +417,8 @@
    "android": true,
    "ios": true,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "GROUP"
   },
   {
    "id": "EVT_BENIH_042",
@@ -414,7 +438,10 @@
    "android": false,
    "ios": false,
    "pc": true,
-   "quest": false
+   "quest": false,
+   "instance": "FRIENDS",
+   "poster_slot": 15,
+   "banner_slot": 5
   },
   {
    "id": "EVT_BENIH_020",
@@ -435,11 +462,10 @@
    "ios": false,
    "pc": true,
    "quest": false,
+   "instance": "GROUP_PLUS",
    "world_id": "wrld_f995a2eb-7ddc-4558-aef1-815c3b23df6c",
    "group_id": "grp_23000000-0000-4000-8000-000000000023",
-   "discord": "https://discord.gg/malamklub",
-   "poster_slot": 2,
-   "highlight": true
+   "discord": "https://discord.gg/malamklub"
   },
   {
    "id": "EVT_BENIH_021",
@@ -460,7 +486,9 @@
    "ios": false,
    "pc": true,
    "quest": true,
-   "world_id": "wrld_1c000000-0000-4000-8000-00000000001c"
+   "instance": "PUBLIC",
+   "world_id": "wrld_1c000000-0000-4000-8000-00000000001c",
+   "banner_slot": 6
   },
   {
    "id": "EVT_BENIH_022",
@@ -480,7 +508,8 @@
    "android": true,
    "ios": false,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_023",
@@ -500,7 +529,8 @@
    "android": false,
    "ios": false,
    "pc": true,
-   "quest": false
+   "quest": false,
+   "instance": "GROUP"
   },
   {
    "id": "EVT_BENIH_024",
@@ -521,6 +551,7 @@
    "ios": true,
    "pc": true,
    "quest": true,
+   "instance": "PUBLIC",
    "group_id": "grp_2d000000-0000-4000-8000-00000000002d",
    "discord": "https://discord.gg/trivia"
   },
@@ -542,7 +573,8 @@
    "android": true,
    "ios": true,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_026",
@@ -562,7 +594,8 @@
    "android": true,
    "ios": false,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_027",
@@ -582,7 +615,9 @@
    "android": true,
    "ios": false,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "PUBLIC",
+   "banner_slot": 7
   },
   {
    "id": "EVT_BENIH_028",
@@ -604,6 +639,7 @@
    "ios": false,
    "pc": true,
    "quest": true,
+   "instance": "PUBLIC",
    "world_id": "wrld_12000000-0000-4000-8000-000000000012",
    "group_id": "grp_22000000-0000-4000-8000-000000000022",
    "discord": "https://discord.gg/karaoke"
@@ -626,7 +662,8 @@
    "android": true,
    "ios": true,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_057",
@@ -646,7 +683,8 @@
    "android": true,
    "ios": true,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_043",
@@ -667,6 +705,7 @@
    "ios": false,
    "pc": true,
    "quest": true,
+   "instance": "PUBLIC",
    "world_id": "wrld_1a000000-0000-4000-8000-00000000001a",
    "discord": "https://discord.gg/maraton"
   },
@@ -688,7 +727,8 @@
    "android": false,
    "ios": false,
    "pc": true,
-   "quest": false
+   "quest": false,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_046",
@@ -708,7 +748,8 @@
    "android": true,
    "ios": false,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_047",
@@ -728,7 +769,8 @@
    "android": true,
    "ios": false,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_048",
@@ -747,7 +789,8 @@
    "android": false,
    "ios": false,
    "pc": true,
-   "quest": false
+   "quest": false,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_049",
@@ -767,7 +810,8 @@
    "android": false,
    "ios": false,
    "pc": true,
-   "quest": false
+   "quest": false,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_044",
@@ -789,11 +833,10 @@
    "ios": false,
    "pc": true,
    "quest": true,
+   "instance": "GROUP_PLUS",
    "world_id": "wrld_f995a2eb-7ddc-4558-aef1-815c3b23df6c",
    "group_id": "grp_a4f791af-a167-4c91-b849-2e37e37f509a",
-   "discord": "https://discord.gg/contoh-tahunbaru",
-   "poster_slot": 3,
-   "highlight": true
+   "discord": "https://discord.gg/contoh-tahunbaru"
   },
   {
    "id": "EVT_BENIH_050",
@@ -813,7 +856,8 @@
    "android": true,
    "ios": false,
    "pc": false,
-   "quest": true
+   "quest": true,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_051",
@@ -832,7 +876,8 @@
    "android": false,
    "ios": true,
    "pc": false,
-   "quest": false
+   "quest": false,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_052",
@@ -851,7 +896,8 @@
    "android": true,
    "ios": false,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_053",
@@ -870,7 +916,8 @@
    "android": false,
    "ios": true,
    "pc": true,
-   "quest": false
+   "quest": false,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_054",
@@ -890,7 +937,8 @@
    "android": true,
    "ios": true,
    "pc": false,
-   "quest": true
+   "quest": true,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_055",
@@ -911,6 +959,7 @@
    "ios": true,
    "pc": true,
    "quest": true,
+   "instance": "PUBLIC",
    "world_id": "wrld_19000000-0000-4000-8000-000000000019"
   },
   {
@@ -933,11 +982,10 @@
    "ios": false,
    "pc": true,
    "quest": true,
+   "instance": "GROUP_PUBLIC",
    "world_id": "wrld_f995a2eb-7ddc-4558-aef1-815c3b23df6c",
    "group_id": "grp_a4f791af-a167-4c91-b849-2e37e37f509a",
-   "discord": "https://discord.gg/festival",
-   "poster_slot": 4,
-   "highlight": true
+   "discord": "https://discord.gg/festival"
   },
   {
    "id": "EVT_BENIH_059",
@@ -959,6 +1007,7 @@
    "ios": false,
    "pc": true,
    "quest": true,
+   "instance": "GROUP_PUBLIC",
    "world_id": "wrld_16000000-0000-4000-8000-000000000016",
    "group_id": "grp_26000000-0000-4000-8000-000000000026",
    "discord": "https://discord.gg/festival"
@@ -982,6 +1031,7 @@
    "ios": false,
    "pc": true,
    "quest": false,
+   "instance": "GROUP_PLUS",
    "world_id": "wrld_18000000-0000-4000-8000-000000000018",
    "group_id": "grp_28000000-0000-4000-8000-000000000028"
   },
@@ -1003,7 +1053,8 @@
    "android": true,
    "ios": true,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "GROUP"
   },
   {
    "id": "EVT_BENIH_062",
@@ -1024,7 +1075,8 @@
    "android": true,
    "ios": false,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_063",
@@ -1043,7 +1095,8 @@
    "android": false,
    "ios": false,
    "pc": true,
-   "quest": false
+   "quest": false,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_064",
@@ -1063,7 +1116,8 @@
    "android": true,
    "ios": false,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "FRIENDS_PLUS"
   },
   {
    "id": "EVT_BENIH_065",
@@ -1083,7 +1137,8 @@
    "android": false,
    "ios": false,
    "pc": true,
-   "quest": false
+   "quest": false,
+   "instance": "INVITE_PLUS"
   },
   {
    "id": "EVT_BENIH_067",
@@ -1105,11 +1160,10 @@
    "ios": true,
    "pc": true,
    "quest": true,
+   "instance": "GROUP_PUBLIC",
    "world_id": "wrld_f995a2eb-7ddc-4558-aef1-815c3b23df6c",
    "group_id": "grp_a4f791af-a167-4c91-b849-2e37e37f509a",
-   "discord": "https://discord.gg/contoh-ultah",
-   "poster_slot": 5,
-   "highlight": true
+   "discord": "https://discord.gg/contoh-ultah"
   },
   {
    "id": "EVT_BENIH_069",
@@ -1128,7 +1182,8 @@
    "android": true,
    "ios": true,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "FRIENDS_PLUS"
   },
   {
    "id": "EVT_BENIH_070",
@@ -1148,7 +1203,8 @@
    "android": true,
    "ios": true,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "PUBLIC"
   },
   {
    "id": "EVT_BENIH_071",
@@ -1168,7 +1224,8 @@
    "android": true,
    "ios": true,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "INVITE"
   },
   {
    "id": "EVT_BENIH_072",
@@ -1188,7 +1245,8 @@
    "android": true,
    "ios": false,
    "pc": true,
-   "quest": true
+   "quest": true,
+   "instance": "GROUP"
   }
  ]
 }
