@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Papan Acara VRChat</title>
+<meta name="description" content="Jadwal acara VRChat: apa yang berlangsung sekarang dan apa yang akan datang.">
+<meta property="og:title" content="Papan Acara VRChat">
+<meta property="og:description" content="Apa yang berlangsung sekarang dan apa yang akan datang.">
+<meta property="og:image" content="banner.jpg">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<script src="jadwal.js"></script>
+<style>
+/* ============================================================ dasar
+   Situs ini sengaja satu rupa gelap saja. Acaranya larut malam, papannya di
+   dalam world juga gelap, dan posternya dirancang untuk latar gelap — mode
+   terang di sini cuma akan melawan bahan yang sudah ada. */
+:root{
+  --ground:#0B0A0C; --panel:#141216; --panel-2:#1C1920;
+  --ink:#F2EDE4; --ink-2:#A29A90; --ink-3:#6B645D;
+  --rule:#262229; --rule-2:#38323C;
+  --live:#3ECFB2; --live-dim:#0E2B27;
+  --sorot:#E8A33D; --sorot-dim:#2A2011;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --papan:"Archivo",var(--sans);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+     font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.bungkus{max-width:940px;margin:0 auto;padding:0 22px}
+.jw{--jw-mono:var(--mono)}
+
+/* ====================================================== kepala bergaya papan
+   Nama disetel lebar dan berat seperti papan nama tempat pertunjukan, dengan
+   satu baris keadaan di bawahnya. Itu urutan yang dicari orang: tempat apa
+   ini, lalu ada apa sekarang. */
+header{border-bottom:1px solid var(--rule);
+       background:linear-gradient(180deg,var(--panel) 0%,var(--ground) 100%)}
+.papan{padding:34px 0 18px}
+.papan h1{margin:0;font-family:var(--papan);
+  font-variation-settings:"wdth" 118,"wght" 800;
+  font-size:clamp(30px,6vw,56px);line-height:.96;letter-spacing:-.02em;
+  text-transform:uppercase;text-wrap:balance}
+.papan h1 em{font-style:normal;color:var(--sorot)}
+.papan .sub{margin-top:12px;font-family:var(--mono);font-size:12px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+
+.keadaan{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;
+  padding:14px 0 20px;font-family:var(--mono);font-size:12.5px;
+  border-top:1px solid var(--rule);margin-top:22px}
+.keadaan .butir{display:flex;align-items:center;gap:7px;color:var(--ink-2)}
+.keadaan .titik{width:7px;height:7px;border-radius:50%;background:var(--ink-3)}
+.keadaan .hidup .titik{background:var(--live);animation:denyut 2s ease-in-out infinite}
+.keadaan .hidup{color:var(--live)}
+.keadaan b{color:var(--ink);font-weight:600}
+@keyframes denyut{0%,100%{opacity:1}50%{opacity:.3}}
+@media(prefers-reduced-motion:reduce){.keadaan .hidup .titik{animation:none}}
+
+/* ============================================================ acara sorotan
+   Posternya yang jadi pahlawan halaman. Itu satu-satunya bagian yang dibuat
+   penyelenggara sendiri, dan satu-satunya yang benar-benar berbeda tiap
+   acara — jadi ia yang pantas paling besar. */
+.sorot{padding:30px 0 6px}
+.kartu{display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr);gap:26px;
+  background:var(--panel);border:1px solid var(--rule-2);border-radius:12px;
+  padding:20px;position:relative;overflow:hidden}
+.kartu .aura{position:absolute;inset:-40% -10% auto -10%;height:180%;
+  filter:blur(64px) saturate(1.5);opacity:.24;pointer-events:none;
+  background-size:cover;background-position:center}
+.kartu>*{position:relative}
+.kartu .gbr{aspect-ratio:4/5;border-radius:8px;overflow:hidden;background:var(--panel-2);
+  border:1px solid var(--rule-2)}
+.kartu .gbr img{width:100%;height:100%;object-fit:cover;display:block}
+.kartu .isi{display:flex;flex-direction:column;min-width:0}
+.kartu .cap{font-family:var(--mono);font-size:10.5px;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--sorot);margin-bottom:9px}
+.kartu .cap.live{color:var(--live)}
+.kartu h2{margin:0;font-family:var(--papan);font-variation-settings:"wdth" 108,"wght" 700;
+  font-size:clamp(24px,3.6vw,34px);line-height:1.08;letter-spacing:-.015em;text-wrap:balance}
+.kartu .oleh{margin-top:7px;color:var(--ink-2);font-size:14.5px}
+.kartu dl{display:grid;grid-template-columns:auto 1fr;gap:5px 16px;margin:18px 0 0;
+  font-size:14px;align-items:baseline}
+.kartu dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3)}
+.kartu dd{margin:0}
+.kartu .plat{display:flex;gap:6px;align-items:center}
+.kartu .plat img{width:20px;height:20px}
+.tautan{display:flex;flex-wrap:wrap;gap:9px;margin-top:auto;padding-top:20px}
+/* Acara tanpa tautan tidak menyisakan lubang di bawah kartu. */
+.tautan:empty{display:none}
+.tautan a{display:inline-flex;align-items:center;gap:7px;text-decoration:none;
+  font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.04em;
+  padding:8px 13px;border:1px solid var(--rule-2);border-radius:6px;
+  color:var(--ink-2);background:var(--panel-2);transition:border-color .15s,color .15s}
+.tautan a:hover{border-color:var(--sorot);color:var(--sorot)}
+.tautan a.utama{border-color:var(--sorot);color:var(--sorot)}
+.tautan a.utama:hover{background:var(--sorot-dim)}
+@media(max-width:640px){.kartu{grid-template-columns:1fr}
+  .kartu .gbr{max-width:220px}}
+
+/* ================================================================== jadwal */
+.jadwal{padding:34px 0 10px}
+.judul-bag{display:flex;align-items:baseline;gap:14px;margin-bottom:4px}
+.judul-bag h2{margin:0;font-family:var(--papan);
+  font-variation-settings:"wdth" 112,"wght" 700;font-size:19px;
+  letter-spacing:.01em;text-transform:uppercase}
+.judul-bag span{font-family:var(--mono);font-size:11.5px;color:var(--ink-3)}
+.judul-bag::after{content:"";flex:1;height:1px;background:var(--rule)}
+
+/* ================================================================== kaki */
+footer{margin-top:44px;border-top:1px solid var(--rule);
+  background:var(--panel);padding:30px 0 40px}
+footer .baris{display:flex;flex-wrap:wrap;gap:18px 34px;justify-content:space-between;
+  align-items:flex-start}
+footer h3{margin:0 0 6px;font-size:15px;font-weight:600}
+footer p{margin:0;color:var(--ink-2);font-size:14px;max-width:44ch}
+footer .cap{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);margin-bottom:10px}
+footer .stempel{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);
+  margin-top:22px;padding-top:16px;border-top:1px solid var(--rule)}
+
+.galat{margin:40px 0;padding:18px 20px;border:1px solid var(--rule-2);
+  border-radius:8px;background:var(--panel);color:var(--ink-2);font-size:14.5px}
+.galat b{display:block;color:var(--ink);margin-bottom:5px;font-size:16px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bungkus">
+    <div class="papan">
+      <h1>Papan Acara <em>VRChat</em></h1>
+      <div class="sub">Jadwal komunitas &middot; waktu mengikuti jam perangkat Anda</div>
+    </div>
+    <div class="keadaan" id="keadaan"></div>
+  </div>
+</header>
+
+<main class="bungkus">
+  <section class="sorot" id="sorot"></section>
+
+  <section class="jadwal">
+    <div class="judul-bag"><h2>Jadwal</h2><span id="ringkas"></span></div>
+    <div id="jadwal"></div>
+  </section>
+</main>
+
+<footer>
+  <div class="bungkus">
+    <div class="baris">
+      <div>
+        <div class="cap">Punya acara?</div>
+        <h3>Acara Anda bisa masuk papan ini</h3>
+        <p>Jadwal ini juga tampil di dalam VRChat. Hubungi pengelola untuk
+           mendaftarkan acara komunitas Anda.</p>
+      </div>
+      <div>
+        <div class="cap">Cara membaca</div>
+        <h3>Jam menyesuaikan perangkat Anda</h3>
+        <p>Semua jam ditulis dalam zona waktu perangkat yang Anda pakai. Kalau
+           penyelenggara memakai zona lain, jam aslinya ikut ditulis di sebelahnya.</p>
+      </div>
+    </div>
+    <div class="stempel" id="stempel"></div>
+  </div>
+</footer>
+
+<script>
+"use strict";
+
+const IKON = k => `ikon/${k}.png`;
+const POSTER = n => `poster/${n}.jpg`;
+
+const esc = s => String(s ?? "").replace(/[&<>"]/g,
+  c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/**
+ * Tautan acara. ID world dan grup disimpan sebagai ID, bukan alamat, karena
+ * papan di dalam VRChat memakainya langsung sebagai ID — jadi alamat webnya
+ * dirakit di sini saja.
+ */
+function tautanAcara(e) {
+  // Backend sudah menolak skema selain http(s), tapi halaman ini statis dan
+  // membaca events.json apa adanya — satu berkas yang disunting tangan tidak
+  // boleh cukup untuk menyisipkan javascript: ke dalam href.
+  const aman = (u) => {
+    try { return ["http:", "https:"].includes(new URL(u, location.href).protocol); }
+    catch { return false; }
+  };
+  const t = [];
+  if (e.world_id) t.push({ cls: "utama", teks: "Buka world",
+    url: `https://vrchat.com/home/world/${encodeURIComponent(e.world_id)}` });
+  if (e.group_id) t.push({ cls: "", teks: "Halaman grup",
+    url: `https://vrchat.com/home/group/${encodeURIComponent(e.group_id)}` });
+  if (e.discord && aman(e.discord)) t.push({ cls: "", teks: "Discord", url: e.discord });
+  return t;
+}
+
+function platIkon(e) {
+  return ["windows", "android", "ios"].filter(k => e[k])
+    .map(k => `<img src="${IKON(k)}" alt="${k}" title="${k}">`).join("");
+}
+
+/** Acara yang layak jadi kepala halaman: yang sedang berlangsung dulu, lalu
+ *  sorotan terdekat, lalu apa pun yang paling dekat. */
+function pilihSorotan(ev, now) {
+  const depan = ev.filter(e => new Date(e.end) > now)
+                  .sort((a, b) => new Date(a.start) - new Date(b.start));
+  return depan.find(e => new Date(e.start) <= now)
+      || depan.find(e => e.highlight)
+      || depan[0] || null;
+}
+
+function gambarSorotan(e, now) {
+  const wadah = document.getElementById("sorot");
+  if (!e) { wadah.innerHTML = ""; return; }
+
+  const mulai = new Date(e.start), selesai = new Date(e.end);
+  const hidup = now >= mulai && now < selesai;
+  const p2 = n => String(n).padStart(2, "0");
+  const jam = d => `${p2(d.getHours())}:${p2(d.getMinutes())}`;
+
+  // Nama hari hanya berguna kalau acaranya dekat. "Minggu, 100 hari lagi"
+  // tidak memberi tahu apa pun — untuk yang jauh, tanggalnya yang dicari.
+  const hariLagi = Math.round((mulai - now) / 86400000);
+  const kapan = hidup
+    ? "Sedang berlangsung"
+    : [
+        e.highlight ? "Sorotan" : null,
+        hariLagi > 7
+          ? mulai.toLocaleDateString("id-ID", { day: "numeric", month: "long" })
+          : Jadwal.namaHari(mulai, now),
+        Jadwal.selisihKasar(mulai - now),
+      ].filter(Boolean).join(" &middot; ");
+
+  const gbr = (e.poster_slot != null && e.poster_slot >= 0) ? POSTER(e.poster_slot) : null;
+
+  wadah.innerHTML = `<article class="kartu">
+    ${gbr ? `<div class="aura" style="background-image:url('${gbr}')"></div>` : ""}
+    <div class="gbr">${gbr ? `<img src="${gbr}" alt="Poster ${esc(e.title)}">` : ""}</div>
+    <div class="isi">
+      <div class="cap${hidup ? " live" : ""}">${kapan}</div>
+      <h2>${esc(e.title)}</h2>
+      ${e.author ? `<div class="oleh">oleh ${esc(e.author)}</div>` : ""}
+      <dl>
+        <dt>Waktu</dt><dd>${jam(mulai)} &ndash; ${jam(selesai)} ${Jadwal.zonaPembaca()}</dd>
+        ${e.genres && e.genres.length
+          ? `<dt>Jenis</dt><dd>${esc(e.genres.join(", "))}</dd>` : ""}
+        <dt>Platform</dt><dd class="plat">${platIkon(e) || "&mdash;"}</dd>
+      </dl>
+      <div class="tautan">${tautanAcara(e).map(t =>
+        `<a class="${t.cls}" href="${esc(t.url)}" target="_blank" rel="noopener">${t.teks}</a>`
+      ).join("")}</div>
+    </div>
+  </article>`;
+}
+
+function gambarKeadaan(ev, now) {
+  const hidup = ev.filter(e => now >= new Date(e.start) && now < new Date(e.end));
+  const depan = ev.filter(e => new Date(e.start) > now)
+                  .sort((a, b) => new Date(a.start) - new Date(b.start));
+  const butir = [];
+
+  butir.push(hidup.length
+    ? `<span class="butir hidup"><span class="titik"></span>
+       <b>${hidup.length} acara</b> berlangsung sekarang</span>`
+    : `<span class="butir"><span class="titik"></span>Tidak ada acara berlangsung</span>`);
+
+  // Sengaja tidak menulis "berikutnya" di sini: komponen jadwal di bawah
+  // sudah menyebutkannya lengkap dengan nama acaranya, dan dua tulisan yang
+  // sama dengan angka sedikit berbeda cuma membuat pembaca ragu.
+  butir.push(`<span class="butir"><b>${depan.length}</b> acara terjadwal</span>`);
+
+  const penyelenggara = new Set(ev.filter(e => new Date(e.end) > now)
+                                 .map(e => e.author).filter(Boolean));
+  if (penyelenggara.size > 1) {
+    butir.push(`<span class="butir">dari <b>${penyelenggara.size}</b> penyelenggara</span>`);
+  }
+
+  document.getElementById("keadaan").innerHTML = butir.join("");
+}
+
+function gagal(pesan) {
+  document.querySelector("main").innerHTML =
+    `<div class="galat"><b>Jadwal belum bisa dimuat</b>${esc(pesan)}</div>`;
+}
+
+Promise.all([
+  fetch("events.json", { cache: "no-cache" }).then(r => {
+    if (!r.ok) throw new Error(`events.json ${r.status}`);
+    return r.json();
+  }),
+  fetch("version.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null)
+    .catch(() => null),
+]).then(([data, versi]) => {
+  const now = new Date();
+  const ev = data.events || [];
+
+  gambarKeadaan(ev, now);
+  gambarSorotan(pilihSorotan(ev, now), now);
+
+  Jadwal.gambar(document.getElementById("jadwal"), {
+    events: ev,
+    now,
+    slotUrl: POSTER,
+    ikonUrl: IKON,
+    // Pengunjung datang untuk tahu apa yang akan datang. Acara yang sudah
+    // selesai tetap ada di konsol penyelenggara, tapi tidak di sini.
+    sembunyikanLewat: true,
+    kosong: {
+      judul: "Belum ada acara terjadwal",
+      pesan: "Papan ini akan terisi begitu ada acara berikutnya yang diumumkan.",
+    },
+  });
+
+  const depan = ev.filter(e => new Date(e.end) > now).length;
+  document.getElementById("ringkas").textContent =
+    depan ? `${depan} akan datang` : "";
+
+  if (versi && versi.generatedAt) {
+    const t = new Date(versi.generatedAt);
+    document.getElementById("stempel").textContent =
+      `Diperbarui ${t.toLocaleDateString("id-ID", { day:"numeric", month:"long", year:"numeric" })}` +
+      ` pukul ${String(t.getHours()).padStart(2,"0")}.${String(t.getMinutes()).padStart(2,"0")}` +
+      ` — data versi ${versi.dataVersion}`;
+  }
+}).catch(err => gagal(String(err.message || err)));
+</script>
+</body>
+</html>

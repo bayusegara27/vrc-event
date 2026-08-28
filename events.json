@@ -1,10 +1,69 @@
 {
  "genres": {
-  "Music": 2,
+  "Indonesia": 3,
+  "Chill": 1,
+  "Music": 3,
   "Karaoke": 1,
-  "Indonesia": 1
+  "Dance": 1
  },
  "events": [
+  {
+   "id": "evt_1M13EKBMFZSDD",
+   "title": "Windows saja",
+   "author": "-Nakumi",
+   "body": "",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-12-05T20:00:00+07:00",
+   "end": "2026-12-05T22:00:00+07:00",
+   "genres": [
+    "Indonesia"
+   ],
+   "windows": true,
+   "android": false,
+   "ios": false,
+   "pc": true,
+   "quest": false
+  },
+  {
+   "id": "evt_1M13EKBQE898E",
+   "title": "Android saja",
+   "author": "wle",
+   "body": "",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-12-05T21:00:00+07:00",
+   "end": "2026-12-05T23:00:00+07:00",
+   "genres": [
+    "Chill"
+   ],
+   "windows": false,
+   "android": true,
+   "ios": false,
+   "pc": false,
+   "quest": true
+  },
+  {
+   "id": "evt_1M13EKBT1DST2",
+   "title": "iOS saja",
+   "author": "miaw",
+   "body": "",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-12-06T20:00:00+07:00",
+   "end": "2026-12-06T22:00:00+07:00",
+   "genres": [
+    "Music"
+   ],
+   "windows": false,
+   "android": false,
+   "ios": true,
+   "pc": false,
+   "quest": false
+  },
   {
    "id": "evt_1M12E419J4K0G",
    "title": "Karaoke Nite",
@@ -19,16 +78,44 @@
     "Music",
     "Karaoke"
    ],
+   "windows": true,
+   "android": false,
+   "ios": false,
    "pc": true,
    "quest": false,
    "poster_slot": 1,
    "highlight": true
   },
   {
-   "id": "evt_1M12E4172KCSE",
-   "title": "Malam Puncak Tahun Baru",
-   "author": "Panitia Gabungan",
-   "body": "Kumpul bareng semua komunitas.",
+   "id": "evt_1M13EKBWKXCTK",
+   "title": "Semua platform, ada portal",
+   "author": "Studio Neko",
+   "body": "",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-12-06T21:00:00+07:00",
+   "end": "2026-12-07T01:00:00+07:00",
+   "genres": [
+    "Indonesia",
+    "Music"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true,
+   "world_id": "wrld_f995a2eb-7ddc-4558-aef1-815c3b23df6c",
+   "group_id": "grp_a4f791af-a167-4c91-b849-2e37e37f509a",
+   "discord": "https://discord.gg/contoh",
+   "poster_slot": 0,
+   "highlight": true
+  },
+  {
+   "id": "evt_1M13EKBZKQVVP",
+   "title": "Windows + Android",
+   "author": "Panitia",
+   "body": "",
    "way": "",
    "condition": "",
    "note": "",
@@ -36,11 +123,14 @@
    "end": "2027-01-01T05:00:00+07:00",
    "genres": [
     "Indonesia",
-    "Music"
+    "Dance"
    ],
+   "windows": true,
+   "android": true,
+   "ios": false,
    "pc": true,
    "quest": true,
-   "poster_slot": 0,
+   "poster_slot": 1,
    "highlight": true
   }
  ]
