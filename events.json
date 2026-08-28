@@ -1,23 +1,114 @@
 {
  "genres": {
-  "Indonesia": 3,
-  "Chill": 1,
-  "Music": 3,
-  "Karaoke": 1,
-  "Dance": 1
+  "Music": 14,
+  "Karaoke": 5,
+  "Indonesia": 14,
+  "Game": 12,
+  "Regular": 6,
+  "Nonton": 6,
+  "Chill": 18,
+  "Meetup": 13,
+  "Belajar": 7,
+  "Beginner": 7,
+  "Dance": 7,
+  "Roleplay": 2
  },
  "events": [
   {
-   "id": "evt_1M13EKBMFZSDD",
-   "title": "Windows saja",
-   "author": "-Nakumi",
-   "body": "",
+   "id": "EVT_BENIH_000",
+   "title": "Karaoke Sabtu Malam",
+   "author": "senja",
+   "body": "Nyanyi bareng sampai suara habis. Antrian lagu lewat papan di panggung, satu orang dua lagu dulu biar semua kebagian.",
    "way": "",
    "condition": "",
    "note": "",
-   "start": "2026-12-05T20:00:00+07:00",
-   "end": "2026-12-05T22:00:00+07:00",
+   "start": "2026-08-21T21:00:00+07:00",
+   "end": "2026-08-22T01:00:00+07:00",
    "genres": [
+    "Music",
+    "Karaoke",
+    "Indonesia"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true,
+   "poster_slot": 0
+  },
+  {
+   "id": "EVT_BENIH_001",
+   "title": "Turnamen Mini Golf Musim 3 — Babak Penyisihan",
+   "author": "bagas",
+   "body": "Delapan tim, sistem gugur. Yang kalah tetap boleh nonton dari tribun.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-22T20:00:00+07:00",
+   "end": "2026-08-22T23:00:00+07:00",
+   "genres": [
+    "Game",
+    "Regular"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_002",
+   "title": "Nobar Anime Lawas: Cowboy Bebop",
+   "author": "kirana",
+   "body": "Empat episode pilihan. Ada subtitle Indonesia.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-22T20:30:00+07:00",
+   "end": "2026-08-22T23:00:00+07:00",
+   "genres": [
+    "Nonton",
+    "Chill"
+   ],
+   "windows": true,
+   "android": false,
+   "ios": false,
+   "pc": true,
+   "quest": false,
+   "poster_slot": 1
+  },
+  {
+   "id": "EVT_BENIH_003",
+   "title": "Ngobrol Santai Minggu Sore",
+   "author": "kirana",
+   "body": "Nggak ada tema. Datang, duduk, ngobrol apa aja.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-23T16:00:00+07:00",
+   "end": "2026-08-23T19:00:00+07:00",
+   "genres": [
+    "Chill",
+    "Meetup"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_004",
+   "title": "Sesi Foto Avatar Baru",
+   "author": "senja",
+   "body": "Bawa avatar barumu, aku bawa lampunya. Hasil fotonya dikirim lewat Discord.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-24T19:00:00+07:00",
+   "end": "2026-08-24T21:00:00+07:00",
+   "genres": [
+    "Chill",
     "Indonesia"
    ],
    "windows": true,
@@ -27,17 +118,678 @@
    "quest": false
   },
   {
-   "id": "evt_1M13EKBQE898E",
-   "title": "Android saja",
-   "author": "wle",
+   "id": "EVT_BENIH_005",
+   "title": "Malam Puisi dan Gitar Akustik",
+   "author": "senja",
+   "body": "Bacain puisi sendiri atau punya orang, diiringi gitar. Boleh cuma dengerin.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-24T21:00:00+07:00",
+   "end": "2026-08-24T23:00:00+07:00",
+   "genres": [
+    "Music",
+    "Chill"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true,
+   "poster_slot": 2
+  },
+  {
+   "id": "EVT_BENIH_006",
+   "title": "Belajar Unity buat Pemula: Sesi 1",
+   "author": "kirana",
+   "body": "Dari nol: bikin world sederhana yang bisa dimasuki. Bawa laptop yang Unity-nya sudah kepasang.",
+   "way": "",
+   "condition": "Unity 2022.3 sudah terpasang",
+   "note": "",
+   "start": "2026-08-25T20:00:00+07:00",
+   "end": "2026-08-25T22:00:00+07:00",
+   "genres": [
+    "Belajar",
+    "Beginner"
+   ],
+   "windows": true,
+   "android": false,
+   "ios": false,
+   "pc": true,
+   "quest": false
+  },
+  {
+   "id": "EVT_BENIH_007",
+   "title": "Prop Hunt Chaos Night",
+   "author": "bagas",
+   "body": "Sembunyi jadi benda. Ronde pendek, ganti map tiap 15 menit.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-25T21:00:00+07:00",
+   "end": "2026-08-25T23:30:00+07:00",
+   "genres": [
+    "Game"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_008",
+   "title": "Meetup Bandung Raya",
+   "author": "kirana",
+   "body": "Kumpul-kumpul yang di Bandung dan sekitarnya. Ngobrol offline juga boleh diatur.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-26T19:30:00+07:00",
+   "end": "2026-08-26T21:30:00+07:00",
+   "genres": [
+    "Meetup",
+    "Indonesia"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_010",
+   "title": "Dance Practice Room",
+   "author": "senja",
+   "body": "Latihan gerakan pelan-pelan, cermin dinyalakan. Nggak ada yang dinilai.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-27T20:00:00+07:00",
+   "end": "2026-08-27T22:00:00+07:00",
+   "genres": [
+    "Dance",
+    "Beginner"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_011",
+   "title": "Ngopi Sore Bareng",
+   "author": "kirana",
+   "body": "Duduk santai di kafe, ngobrol apa aja. Cocok buat yang baru main VRChat.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-28T16:00:00+07:00",
+   "end": "2026-08-28T19:00:00+07:00",
+   "genres": [
+    "Chill",
+    "Meetup"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true,
+   "poster_slot": 3
+  },
+  {
+   "id": "EVT_BENIH_012",
+   "title": "Open Mic: Siapa Aja Boleh Naik",
+   "author": "senja",
+   "body": "Panggung terbuka. Nyanyi, stand-up, baca cerita, apa pun. Daftar di tempat.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-28T20:00:00+07:00",
+   "end": "2026-08-28T23:00:00+07:00",
+   "genres": [
+    "Music",
+    "Indonesia"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true,
+   "world_id": "wrld_f995a2eb-7ddc-4558-aef1-815c3b23df6c",
+   "group_id": "grp_a4f791af-a167-4c91-b849-2e37e37f509a",
+   "discord": "https://discord.gg/contoh-openmic",
+   "poster_slot": 4,
+   "highlight": true
+  },
+  {
+   "id": "EVT_BENIH_013",
+   "title": "Murder Mystery Malam Ini",
+   "author": "bagas",
+   "body": "Satu pembunuh, satu detektif, sisanya warga. Ronde 10 menit.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-28T20:00:00+07:00",
+   "end": "2026-08-28T22:00:00+07:00",
+   "genres": [
+    "Game",
+    "Roleplay"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_014",
+   "title": "Nobar Dokumenter Luar Angkasa",
+   "author": "kirana",
+   "body": "Satu episode, lalu ngobrolin isinya sampai kepanjangan seperti biasa.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-28T20:00:00+07:00",
+   "end": "2026-08-28T21:30:00+07:00",
+   "genres": [
+    "Nonton"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_015",
+   "title": "Tidur Bareng (Sleep Session)",
+   "author": "kirana",
+   "body": "Mic dimatikan, suara hujan dinyalakan. Datang, cari kasur, tidur beneran.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-28T23:00:00+07:00",
+   "end": "2026-08-29T06:00:00+07:00",
+   "genres": [
+    "Chill"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_018",
+   "title": "Sesi Gambar Bareng",
+   "author": "kirana",
+   "body": "Gambar apa aja, sambil ngobrol. Ada yang jelasin dasar-dasar kalau diminta.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-29T19:00:00+07:00",
+   "end": "2026-08-29T21:00:00+07:00",
+   "genres": [
+    "Chill",
+    "Belajar"
+   ],
+   "windows": true,
+   "android": false,
+   "ios": false,
+   "pc": true,
+   "quest": false
+  },
+  {
+   "id": "EVT_BENIH_016",
+   "title": "Karaoke Sabtu Malam",
+   "author": "senja",
+   "body": "Nyanyi bareng sampai suara habis. Minggu ini tema lagu 2000-an.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-29T21:00:00+07:00",
+   "end": "2026-08-30T01:00:00+07:00",
+   "genres": [
+    "Music",
+    "Karaoke",
+    "Indonesia"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true,
+   "world_id": "wrld_f995a2eb-7ddc-4558-aef1-815c3b23df6c",
+   "group_id": "grp_a4f791af-a167-4c91-b849-2e37e37f509a",
+   "poster_slot": 5,
+   "highlight": true
+  },
+  {
+   "id": "EVT_BENIH_017",
+   "title": "Turnamen Mini Golf Musim 3 — Semifinal",
+   "author": "bagas",
+   "body": "Empat tim tersisa. Pemenang lanjut ke final pekan depan.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-29T21:00:00+07:00",
+   "end": "2026-08-30T00:00:00+07:00",
+   "genres": [
+    "Game",
+    "Regular"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_042",
+   "title": "Sesi Kilat: Tanya Jawab Avatar (30 Menit Saja)",
+   "author": "senja",
+   "body": "Setengah jam, langsung tanya langsung jawab.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-30T19:00:00+07:00",
+   "end": "2026-08-30T19:30:00+07:00",
+   "genres": [
+    "Belajar",
+    "Beginner"
+   ],
+   "windows": true,
+   "android": false,
+   "ios": false,
+   "pc": true,
+   "quest": false
+  },
+  {
+   "id": "EVT_BENIH_020",
+   "title": "Malam Klub: Bass Berat",
+   "author": "senja",
+   "body": "DJ set empat jam. Bawa telinga yang siap.",
+   "way": "",
+   "condition": "Avatar rank Good atau lebih ringan",
+   "note": "",
+   "start": "2026-08-31T22:00:00+07:00",
+   "end": "2026-09-01T02:00:00+07:00",
+   "genres": [
+    "Music",
+    "Dance"
+   ],
+   "windows": true,
+   "android": false,
+   "ios": false,
+   "pc": true,
+   "quest": false,
+   "world_id": "wrld_f995a2eb-7ddc-4558-aef1-815c3b23df6c",
+   "poster_slot": 6,
+   "highlight": true
+  },
+  {
+   "id": "EVT_BENIH_021",
+   "title": "Nobar Film Horor Indonesia",
+   "author": "kirana",
+   "body": "Satu film penuh. Lampu dimatikan, jangan teriak di mic.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-31T22:00:00+07:00",
+   "end": "2026-09-01T00:30:00+07:00",
+   "genres": [
+    "Nonton",
+    "Indonesia"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_022",
+   "title": "Ronda Malam: Jelajah World Serem",
+   "author": "bagas",
+   "body": "Keliling world horor bareng-bareng. Yang penakut boleh pegangan.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-08-31T22:00:00+07:00",
+   "end": "2026-09-01T00:00:00+07:00",
+   "genres": [
+    "Game",
+    "Chill"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_023",
+   "title": "Belajar Unity buat Pemula: Sesi 2",
+   "author": "kirana",
+   "body": "Lanjutan sesi 1: menaruh objek, membuat pintu yang bisa dibuka.",
+   "way": "",
+   "condition": "Sudah ikut sesi 1 atau paham dasarnya",
+   "note": "",
+   "start": "2026-09-01T20:00:00+07:00",
+   "end": "2026-09-01T22:00:00+07:00",
+   "genres": [
+    "Belajar",
+    "Beginner"
+   ],
+   "windows": true,
+   "android": false,
+   "ios": false,
+   "pc": true,
+   "quest": false
+  },
+  {
+   "id": "EVT_BENIH_024",
+   "title": "Trivia Malam Jumat",
+   "author": "bagas",
+   "body": "Empat puluh soal, campur-campur. Hadiahnya cuma nama di papan juara.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-01T20:00:00+07:00",
+   "end": "2026-09-01T21:30:00+07:00",
+   "genres": [
+    "Game",
+    "Meetup"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_025",
+   "title": "Yoga Ringan Sebelum Tidur",
+   "author": "kirana",
+   "body": "Peregangan pelan sambil duduk. Bisa diikuti sambil rebahan.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-01T22:00:00+07:00",
+   "end": "2026-09-01T23:00:00+07:00",
+   "genres": [
+    "Chill",
+    "Beginner"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_026",
+   "title": "Pasar Malam Avatar",
+   "author": "senja",
+   "body": "Pamer avatar buatan sendiri, tukar-tukaran ide, cari komisi.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-02T20:00:00+07:00",
+   "end": "2026-09-02T23:00:00+07:00",
+   "genres": [
+    "Meetup",
+    "Indonesia"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true,
+   "poster_slot": 7
+  },
+  {
+   "id": "EVT_BENIH_027",
+   "title": "Among Us Versi VRChat",
+   "author": "bagas",
+   "body": "Sepuluh orang per ronde. Yang nunggu giliran boleh nonton dari lobi.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-02T20:00:00+07:00",
+   "end": "2026-09-02T22:30:00+07:00",
+   "genres": [
+    "Game",
+    "Regular"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_028",
+   "title": "Karaoke Sabtu Malam",
+   "author": "senja",
+   "body": "Minggu ini tema lagu daerah. Boleh bahasa apa aja.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-05T21:00:00+07:00",
+   "end": "2026-09-06T01:00:00+07:00",
+   "genres": [
+    "Music",
+    "Karaoke",
+    "Indonesia"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_056",
+   "title": "Kumpul Makassar (WITA)",
+   "author": "kirana",
+   "body": "Jam ditulis WITA. Papan menerjemahkannya sendiri ke jam tiap pemain.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-06T20:00:00+08:00",
+   "end": "2026-09-06T22:00:00+08:00",
+   "genres": [
+    "Meetup",
+    "Indonesia"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_057",
+   "title": "Sahur Bareng Jayapura (WIT)",
+   "author": "kirana",
+   "body": "Jam ditulis WIT. Ngobrol pelan sambil nunggu waktunya.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-08T03:30:00+09:00",
+   "end": "2026-09-08T05:00:00+09:00",
+   "genres": [
+    "Chill",
+    "Indonesia"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_043",
+   "title": "Maraton 12 Jam: Dari Sore Sampai Subuh",
+   "author": "bagas",
+   "body": "Ganti permainan tiap jam. Boleh keluar-masuk kapan aja.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-10T17:00:00+07:00",
+   "end": "2026-09-11T05:00:00+07:00",
+   "genres": [
+    "Game",
+    "Regular"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true,
+   "poster_slot": 10
+  },
+  {
+   "id": "EVT_BENIH_045",
+   "title": "Nonton Bareng Sambil Ngemil Sampai Kelewat Batas Panjang Judul Yang Wajar",
+   "author": "kirana",
+   "body": "Judulnya sengaja panjang buat menguji pemotongan di papan.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-12T20:00:00+07:00",
+   "end": "2026-09-12T22:00:00+07:00",
+   "genres": [
+    "Nonton",
+    "Chill"
+   ],
+   "windows": true,
+   "android": false,
+   "ios": false,
+   "pc": true,
+   "quest": false
+  },
+  {
+   "id": "EVT_BENIH_046",
+   "title": "🎤 Karaoke Emoji Night 🎶",
+   "author": "senja",
+   "body": "Judulnya pakai emoji buat menguji atlas emoji di papan.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-14T21:00:00+07:00",
+   "end": "2026-09-15T00:00:00+07:00",
+   "genres": [
+    "Music",
+    "Karaoke"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_047",
+   "title": "日本語カラオケの夜",
+   "author": "senja",
+   "body": "Malam karaoke lagu Jepang. Judulnya sengaja beraksara Jepang.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-15T21:00:00+07:00",
+   "end": "2026-09-16T00:00:00+07:00",
+   "genres": [
+    "Music",
+    "Karaoke"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_048",
+   "title": "Sesi Tanpa Deskripsi",
+   "author": "bagas",
    "body": "",
    "way": "",
    "condition": "",
    "note": "",
-   "start": "2026-12-05T21:00:00+07:00",
-   "end": "2026-12-05T23:00:00+07:00",
+   "start": "2026-09-16T20:00:00+07:00",
+   "end": "2026-09-16T22:00:00+07:00",
    "genres": [
-    "Chill"
+    "Game"
+   ],
+   "windows": true,
+   "android": false,
+   "ios": false,
+   "pc": true,
+   "quest": false
+  },
+  {
+   "id": "EVT_BENIH_049",
+   "title": "Klub PC Saja: Efek Berat",
+   "author": "senja",
+   "body": "World-nya berat, cuma jalan di PC. Sengaja begitu.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-18T22:00:00+07:00",
+   "end": "2026-09-19T01:00:00+07:00",
+   "genres": [
+    "Music",
+    "Dance"
+   ],
+   "windows": true,
+   "android": false,
+   "ios": false,
+   "pc": true,
+   "quest": false
+  },
+  {
+   "id": "EVT_BENIH_044",
+   "title": "Pesta Tahun Baru Sampai Pagi",
+   "author": "senja",
+   "body": "Hitung mundur, kembang api, lalu lanjut sampai matahari terbit.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-19T22:00:00+07:00",
+   "end": "2026-09-20T05:00:00+07:00",
+   "genres": [
+    "Music",
+    "Dance",
+    "Indonesia"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true,
+   "world_id": "wrld_f995a2eb-7ddc-4558-aef1-815c3b23df6c",
+   "group_id": "grp_a4f791af-a167-4c91-b849-2e37e37f509a",
+   "discord": "https://discord.gg/contoh-tahunbaru",
+   "poster_slot": 11,
+   "highlight": true
+  },
+  {
+   "id": "EVT_BENIH_050",
+   "title": "Kumpul Santai Android Saja",
+   "author": "kirana",
+   "body": "World ringan yang dirancang buat Quest.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-20T20:00:00+07:00",
+   "end": "2026-09-20T22:00:00+07:00",
+   "genres": [
+    "Chill",
+    "Meetup"
    ],
    "windows": false,
    "android": true,
@@ -46,17 +798,17 @@
    "quest": true
   },
   {
-   "id": "evt_1M13EKBT1DST2",
-   "title": "iOS saja",
-   "author": "miaw",
-   "body": "",
+   "id": "EVT_BENIH_051",
+   "title": "Ngobrol Sambil Rebahan (iOS)",
+   "author": "kirana",
+   "body": "Buat yang main dari HP sambil tiduran.",
    "way": "",
    "condition": "",
    "note": "",
-   "start": "2026-12-06T20:00:00+07:00",
-   "end": "2026-12-06T22:00:00+07:00",
+   "start": "2026-09-21T21:00:00+07:00",
+   "end": "2026-09-21T22:30:00+07:00",
    "genres": [
-    "Music"
+    "Chill"
    ],
    "windows": false,
    "android": false,
@@ -65,39 +817,265 @@
    "quest": false
   },
   {
-   "id": "evt_1M12E419J4K0G",
-   "title": "Karaoke Nite",
-   "author": "miaw",
-   "body": "",
+   "id": "EVT_BENIH_052",
+   "title": "Nobar Lintas Platform",
+   "author": "kirana",
+   "body": "Jalan di PC dan Android.",
    "way": "",
    "condition": "",
    "note": "",
-   "start": "2026-12-06T21:00:00+07:00",
-   "end": "2026-12-07T01:00:00+07:00",
+   "start": "2026-09-22T20:00:00+07:00",
+   "end": "2026-09-22T22:00:00+07:00",
+   "genres": [
+    "Nonton"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_053",
+   "title": "Meetup PC dan iOS",
+   "author": "kirana",
+   "body": "Kombinasi yang jarang, sengaja dibuat buat menguji lencana.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-23T19:00:00+07:00",
+   "end": "2026-09-23T21:00:00+07:00",
+   "genres": [
+    "Meetup"
+   ],
+   "windows": true,
+   "android": false,
+   "ios": true,
+   "pc": true,
+   "quest": false
+  },
+  {
+   "id": "EVT_BENIH_054",
+   "title": "Sesi Mobile: Android dan iOS",
+   "author": "kirana",
+   "body": "Khusus yang main dari HP.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-24T20:00:00+07:00",
+   "end": "2026-09-24T22:00:00+07:00",
+   "genres": [
+    "Chill",
+    "Beginner"
+   ],
+   "windows": false,
+   "android": true,
+   "ios": true,
+   "pc": false,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_055",
+   "title": "Acara Semua Platform",
+   "author": "bagas",
+   "body": "Jalan di mana saja: PC, Android, iOS.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-25T20:00:00+07:00",
+   "end": "2026-09-25T23:00:00+07:00",
+   "genres": [
+    "Game",
+    "Meetup"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true,
+   "poster_slot": 12
+  },
+  {
+   "id": "EVT_BENIH_058",
+   "title": "Festival Musik Komunitas: Hari 1",
+   "author": "senja",
+   "body": "Enam penampil, satu panggung besar. Hari pertama dari dua hari.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-27T19:00:00+07:00",
+   "end": "2026-09-28T00:00:00+07:00",
    "genres": [
     "Music",
-    "Karaoke"
+    "Indonesia",
+    "Dance"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true,
+   "world_id": "wrld_f995a2eb-7ddc-4558-aef1-815c3b23df6c",
+   "group_id": "grp_a4f791af-a167-4c91-b849-2e37e37f509a",
+   "poster_slot": 13,
+   "highlight": true
+  },
+  {
+   "id": "EVT_BENIH_059",
+   "title": "Festival Musik Komunitas: Hari 2",
+   "author": "senja",
+   "body": "Hari kedua, penampil berbeda. Ditutup jam sebelas.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-28T19:00:00+07:00",
+   "end": "2026-09-29T00:00:00+07:00",
+   "genres": [
+    "Music",
+    "Indonesia",
+    "Dance"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true,
+   "poster_slot": 14
+  },
+  {
+   "id": "EVT_BENIH_060",
+   "title": "Pameran Karya: Avatar dan World",
+   "author": "senja",
+   "body": "Pamerkan yang kamu bikin setahun ini. Tiap orang dapat satu ruang.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-09-30T20:00:00+07:00",
+   "end": "2026-09-30T23:00:00+07:00",
+   "genres": [
+    "Meetup",
+    "Belajar"
    ],
    "windows": true,
    "android": false,
    "ios": false,
    "pc": true,
    "quest": false,
-   "poster_slot": 1,
-   "highlight": true
+   "poster_slot": 15
   },
   {
-   "id": "evt_1M13EKBWKXCTK",
-   "title": "Semua platform, ada portal",
-   "author": "Studio Neko",
-   "body": "",
+   "id": "EVT_BENIH_061",
+   "title": "Turnamen Mini Golf Musim 4 — Pembukaan",
+   "author": "bagas",
+   "body": "Musim baru, aturan baru, tim boleh bertukar anggota.",
    "way": "",
    "condition": "",
    "note": "",
-   "start": "2026-12-06T21:00:00+07:00",
-   "end": "2026-12-07T01:00:00+07:00",
+   "start": "2026-10-02T20:00:00+07:00",
+   "end": "2026-10-02T23:00:00+07:00",
+   "genres": [
+    "Game",
+    "Regular"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_062",
+   "title": "Kelas Menyanyi Dasar",
+   "author": "senja",
+   "body": "Pernapasan dan nada dasar. Nggak harus bisa nyanyi.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-10-03T20:00:00+07:00",
+   "end": "2026-10-03T21:30:00+07:00",
+   "genres": [
+    "Music",
+    "Belajar",
+    "Beginner"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_063",
+   "title": "Nobar Serial: Maraton Musim 2",
+   "author": "kirana",
+   "body": "Lanjutan maraton musim pertama.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-10-05T19:00:00+07:00",
+   "end": "2026-10-06T01:00:00+07:00",
+   "genres": [
+    "Nonton"
+   ],
+   "windows": true,
+   "android": false,
+   "ios": false,
+   "pc": true,
+   "quest": false
+  },
+  {
+   "id": "EVT_BENIH_064",
+   "title": "Malam Roleplay: Kedai Kopi",
+   "author": "kirana",
+   "body": "Semua jadi pengunjung atau pegawai kedai. Bebas bikin tokoh sendiri.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-10-07T20:00:00+07:00",
+   "end": "2026-10-07T23:00:00+07:00",
+   "genres": [
+    "Roleplay",
+    "Chill"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": false,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_065",
+   "title": "Workshop Foto: Cahaya dan Sudut",
+   "author": "senja",
+   "body": "Cara menaruh lampu dan mencari sudut yang enak dilihat.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-10-09T19:00:00+07:00",
+   "end": "2026-10-09T21:00:00+07:00",
+   "genres": [
+    "Belajar",
+    "Chill"
+   ],
+   "windows": true,
+   "android": false,
+   "ios": false,
+   "pc": true,
+   "quest": false
+  },
+  {
+   "id": "EVT_BENIH_067",
+   "title": "Ulang Tahun Komunitas Ke-3",
+   "author": "Nakumi",
+   "body": "Tiga tahun. Ada penampilan, ada cerita lama, ada kue kotak-kotak.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-10-12T20:00:00+07:00",
+   "end": "2026-10-13T01:00:00+07:00",
    "genres": [
     "Indonesia",
+    "Meetup",
     "Music"
    ],
    "windows": true,
@@ -107,31 +1085,86 @@
    "quest": true,
    "world_id": "wrld_f995a2eb-7ddc-4558-aef1-815c3b23df6c",
    "group_id": "grp_a4f791af-a167-4c91-b849-2e37e37f509a",
-   "discord": "https://discord.gg/contoh",
-   "poster_slot": 0,
-   "highlight": true
+   "discord": "https://discord.gg/contoh-ultah"
   },
   {
-   "id": "evt_1M13EKBZKQVVP",
-   "title": "Windows + Android",
-   "author": "Panitia",
-   "body": "",
+   "id": "EVT_BENIH_069",
+   "title": "Malam Tenang: Suara Hujan",
+   "author": "kirana",
+   "body": "Nggak ada acara. Cuma hujan, dan siapa pun yang mau duduk diam.",
    "way": "",
    "condition": "",
    "note": "",
-   "start": "2026-12-31T22:00:00+07:00",
-   "end": "2027-01-01T05:00:00+07:00",
+   "start": "2026-10-16T22:00:00+07:00",
+   "end": "2026-10-17T01:00:00+07:00",
    "genres": [
-    "Indonesia",
-    "Dance"
+    "Chill"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_070",
+   "title": "Kuis Pengetahuan Umum Bulanan",
+   "author": "bagas",
+   "body": "Enam puluh soal, tiga babak, satu juara bulan ini.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-10-18T20:00:00+07:00",
+   "end": "2026-10-18T22:00:00+07:00",
+   "genres": [
+    "Game",
+    "Meetup"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_071",
+   "title": "Sesi Curhat Terbuka",
+   "author": "kirana",
+   "body": "Boleh cerita, boleh cuma dengerin. Yang dibicarakan tetap di sini.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-10-20T21:00:00+07:00",
+   "end": "2026-10-20T23:00:00+07:00",
+   "genres": [
+    "Chill",
+    "Meetup"
+   ],
+   "windows": true,
+   "android": true,
+   "ios": true,
+   "pc": true,
+   "quest": true
+  },
+  {
+   "id": "EVT_BENIH_072",
+   "title": "Latihan Dance Grup: Persiapan Festival",
+   "author": "senja",
+   "body": "Latihan bareng buat tampil di festival berikutnya.",
+   "way": "",
+   "condition": "",
+   "note": "",
+   "start": "2026-10-22T20:00:00+07:00",
+   "end": "2026-10-22T22:30:00+07:00",
+   "genres": [
+    "Dance",
+    "Regular"
    ],
    "windows": true,
    "android": true,
    "ios": false,
    "pc": true,
-   "quest": true,
-   "poster_slot": 1,
-   "highlight": true
+   "quest": true
   }
  ]
 }

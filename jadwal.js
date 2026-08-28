@@ -31,7 +31,7 @@
 
   // ==================================================================== gaya
   const GAYA = `
-.jw{--jw-ink:#EDE7DC;--jw-ink-2:#A79E90;--jw-ink-3:#6E665B;
+.jw{--jw-ink:#EDE7DC;--jw-ink-2:#A79E90;--jw-ink-3:#8B8378;
     --jw-rule:#2A241D;--jw-rule-2:#3D3428;--jw-sunk:#110E0B;--jw-card:#1B1712;
     --jw-live:#3ECFB2;--jw-live-dim:#0F2E29;--jw-hold:#D9A441;--jw-hold-dim:#2E2513;
     --jw-stop:#D9614C;--jw-stop-dim:#2C1712;
