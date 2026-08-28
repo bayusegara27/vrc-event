@@ -337,6 +337,10 @@ Promise.all([
     // Pengunjung datang untuk tahu apa yang akan datang. Acara yang sudah
     // selesai tetap ada di konsol penyelenggara, tapi tidak di sini.
     sembunyikanLewat: true,
+    // Hanya 16 poster yang muat di papan, jadi kebanyakan baris memang tidak
+    // punya gambar. Kotak kosong bertanda "—" di tiap baris membuat daftarnya
+    // terlihat rusak; lebih baik kolomnya tidak ada sama sekali.
+    tanpaKotakPoster: true,
     kosong: {
       judul: "Belum ada acara terjadwal",
       pesan: "Papan ini akan terisi begitu ada acara berikutnya yang diumumkan.",

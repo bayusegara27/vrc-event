@@ -62,7 +62,7 @@
 .jw-hari::after{content:"";flex:1;height:1px;background:var(--jw-rule)}
 .jw-hari.jw-ini .jw-tgl{color:var(--jw-live)}
 
-.jw-baris{display:grid;grid-template-columns:52px 1fr auto;gap:0 13px;
+.jw-baris{display:grid;grid-template-columns:auto 1fr auto;gap:0 13px;
     padding:10px 0;border-bottom:1px solid var(--jw-rule);align-items:start;
     text-align:left;width:100%;background:none;border-left:none;border-right:none;
     border-top:none;font:inherit;color:inherit}
@@ -196,7 +196,8 @@
     if (!aktif.length) return "";
     return `<div class="jw-plat">` + aktif.map((p) => {
       const u = ikonUrl ? ikonUrl(p.kunci) : null;
-      return u ? `<img src="${esc(u)}" alt="${p.nama}" title="${p.nama}">`
+      return u ? `<img src="${esc(u)}" alt="${p.nama}" title="${p.nama}"
+                    onerror="this.style.display='none'">`
                : `<span title="${p.nama}">${p.nama.slice(0, 3)}</span>`;
     }).join("") + `</div>`;
   }
@@ -216,8 +217,13 @@
     const alamat = opsi.posterUrl ? opsi.posterUrl(e)
       : (e.poster_slot != null && e.poster_slot >= 0 && opsi.slotUrl)
         ? opsi.slotUrl(e.poster_slot) : null;
+    // Kolom poster dihilangkan sama sekali kalau tidak ada gambarnya dan
+    // pemanggil memang memintanya. Deretan kotak kosong lebih buruk daripada
+    // baris yang sedikit lebih rapat.
+    const adaKolom = alamat || !opsi.tanpaKotakPoster;
     const poster = alamat
-      ? `<img src="${esc(alamat)}" alt="" loading="lazy">`
+      ? `<img src="${esc(alamat)}" alt="" loading="lazy"
+             onerror="this.parentNode.innerHTML='<span>—</span>'">`
       : `<span>—</span>`;
 
     // Di dalam strip lencana "berlangsung" tidak memberi tahu apa-apa:
@@ -233,7 +239,7 @@
     return `<${tag} class="jw-baris${berlangsung ? " jw-berlangsung" : ""}` +
       `${lewat && !berlangsung ? " jw-lewat" : ""}` +
       `${opsi.dipilih === e.id ? " jw-pilih" : ""}" data-id="${esc(e.id)}"${klik}>
-  <div class="jw-poster">${poster}</div>
+  ${adaKolom ? `<div class="jw-poster">${poster}</div>` : ""}
   <div class="jw-isi">
     <div class="jw-jam"><span>${jam(mulai)} – ${jam(selesai)} ${esc(zonaP)}</span>${jamAsal}</div>
     <div class="jw-judul">${esc(e.title)}</div>
