@@ -210,8 +210,14 @@
     const jamAsal = zonaA && zonaA !== zonaP
       ? `<span class="jw-asal">${esc(zonaA)} ${esc(e.start.slice(11, 16))}</span>` : "";
 
-    const poster = (e.poster_slot != null && e.poster_slot >= 0 && opsi.slotUrl)
-      ? `<img src="${esc(opsi.slotUrl(e.poster_slot))}" alt="" loading="lazy">`
+    // Dua sumber poster. Situs publik memakai nomor slot, karena itu yang ada
+    // di events.json; konsol memakai poster milik acaranya, karena di sana slot
+    // belum dibagikan.
+    const alamat = opsi.posterUrl ? opsi.posterUrl(e)
+      : (e.poster_slot != null && e.poster_slot >= 0 && opsi.slotUrl)
+        ? opsi.slotUrl(e.poster_slot) : null;
+    const poster = alamat
+      ? `<img src="${esc(alamat)}" alt="" loading="lazy">`
       : `<span>—</span>`;
 
     // Di dalam strip lencana "berlangsung" tidak memberi tahu apa-apa:
@@ -246,6 +252,7 @@
    * @param {object} opsi
    *   events        larik acara, bentuknya persis events.json
    *   slotUrl       (n) => alamat poster slot n
+   *   posterUrl     (acara) => alamat poster acara, atau null
    *   ikonUrl       (kunci) => alamat ikon platform
    *   onClick       (acara) => void; kalau ada, barisnya jadi tombol
    *   dipilih       id acara yang sedang disorot
